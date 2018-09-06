@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Remote Testing Environment Workshop</title>
+    <meta charset="utf-8">
+    <script>
+        courseTitle = "OSFC 2018";
+        courseAuthor = "Piotr Król, Michał Żygowski";
+    </script>
+    <link rel="stylesheet" href="slides.css" type="text/css">
+  </head>
+  <body>
+    <script src="js/remark.js">
+    </script>
+    <script src="js/jquery.js">
+    </script>
+    <script>
+	var slideshow = remark.create({
+	    sourceUrl: "rte-workshop.md"
+	});
+
+	slideshow.on('afterShowSlide', function (slide) {
+        if ($(".bottomBar")[0]){
+            $( ".bottomBar" ).remove();
+        } else {
+          // Do something if class does not exist
+        }
+
+    	$('.remark-slide-content').append(
+            "<div class='bottomBar'>"+ courseTitle +
+            " <br> CC BY 4.0 | "+ courseAuthor + "</div>"
+        );
+	});
+
+    </script>
+  </body>
+</html>
