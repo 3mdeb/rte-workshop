@@ -28,12 +28,21 @@ password:   rte-workshop
 Presentation
 ------------
 
-RTE-Workshop presentation is created with Remark - in-browser, markdown-driven slideshow tool. To run such presentation, clone this repository, then go to
+RTE-Workshop presentation is created with Remark - in-browser, markdown-driven
+slideshow tool. To run such presentation, clone this repository, then go to
 `rte-workshop/presentations` directory with all required files and run:
 
 ```
-sudo python -m SimpleHTTPServer 80
+sudo python -m SimpleHTTPServer 8000
 ```
+or
+
+```
+python3 -m http.server 8000
+```
+
 Now, open your favourite browser and type `0.0.0.0`. There should be listed
 directory tree with `rte-workshop.html` file. Just click it and enjoy our
 presentation.
+
+![Directory listing](presentations/images/dir-listing.png)
