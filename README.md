@@ -29,7 +29,7 @@ Presentation
 ------------
 
 RTE-Workshop presentation is created with Remark - in-browser, markdown-driven slideshow tool. To run such presentation, clone this repository, then go to
-`rte-workshop` directory with all required files and run:
+`rte-workshop/presentations` directory with all required files and run:
 
 ```
 sudo python -m SimpleHTTPServer 80
