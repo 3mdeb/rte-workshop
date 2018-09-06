@@ -89,7 +89,7 @@ for supplementary boot option.
 
 # Hardware setup
 
-* connect RTE Hat with Orange Pi Zero board (~1.5min)
+* connect RTE Hat with Orange Pi Zero board **(~3min)**
 
 .center[![HAT with OPi](images/conn-hat.jpg)]
 
@@ -97,7 +97,7 @@ for supplementary boot option.
 
 # Hardware setup
 
-* RS232 interface via a null modem cable (~1min)
+* RS232 interface via a null modem cable **(~2min)**
 
 .center[![RS232](images/conn-rs232.jpg)]
 
@@ -105,7 +105,7 @@ for supplementary boot option.
 
 # Hardware setup
 
-* SPI interface via IDC 2x4 pin cable (~1.5min)
+* SPI interface via IDC 2x4 pin cable **(~3min)**
 
 .center[.inner[
 <img src="images/spi-apu-rte.png" height="400px">
@@ -115,7 +115,7 @@ for supplementary boot option.
 
 # Hardware setup
 
-* APU PWR/RST pins with RTE OC buffers (~3min)
+* APU PWR/RST pins with RTE OC buffers **(~5min)**
 
 .left[![Other pins](images/conn-other2.png)]
 
@@ -123,7 +123,7 @@ for supplementary boot option.
 
 # Hardware setup
 
-* DC-DC jack cable (~30s)
+* DC-DC jack cable **(~2min)**
 
 .center[![DC Jack](images/conn-dcjack.jpg)]
 
@@ -133,7 +133,7 @@ for supplementary boot option.
 
 .center[<img src="images/full-setup.png" width="500px">]
 
-* take the connected setup to the power/network section (~6min):
+* take the connected setup to the power/network section **(~10min)**:
     - power up RTE and APU platforms
     - connect Ethernet cable to Orange Pi Zero
 
@@ -146,6 +146,7 @@ for supplementary boot option.
 * Utilizes the keyword-driven testing approach
 * The core is implemented using Python and runs also on Jython (JVM) and
 IronPython (.NET)
+* Bug fixes need tests too - Test-Driven Bug Fixing (TDBF)
 
 .center[![RF icon](images/rf-icon.png)]
 
@@ -182,7 +183,7 @@ RTE: 1.1 SSH connection
 
 # Automation tests - setup environment
 
-First, prepare the environment:
+First, prepare the environment **(~10min)**:
 
 --
 
@@ -213,7 +214,7 @@ First, prepare the environment:
 
 # Connection validation - part 1
 
-Now we should run script which tests our hardware setup:
+Now we should run script which tests our hardware setup **(~5min)**:
 
 --
 
@@ -254,13 +255,13 @@ where **`RTE_IP`** is your RTE IP address
 
 .left[![validation result](images/cmd5.png)]
 
-Try it by yourself by typing: **`firefox log.html`**
+Try it by yourself by typing: **`firefox log.html report.html output.xml`**
 
 ---
 
 # Flashing firmware - automated process
 
-Flashing process can be started by **`flash-apu.robot`** script:
+Flashing process can be started by **`flash-apu.robot`** script **(~5min)**:
 * **`robot -v rte_ip:RTE_IP -v fw_file:PATH_TO_FILE flash-apu.robot`**
 
 * remember to change **fw_file** firmware path for appropriate APU2/3/4 binary
@@ -276,7 +277,7 @@ Possible failures:
 
 ---
 
-# Fixing bugs
+# Fixing bugs (~10min)
 
 We have prepared 2 binaries to present the RTE and RobotFramework
 capability to track down unexpected bugs and flash APUs firmware:
@@ -295,7 +296,7 @@ capability to track down unexpected bugs and flash APUs firmware:
 
 ---
 
-# Fixing bugs
+# Fixing bugs (~10min)
 
 We have prepared 2 binaries to present the RTE and RobotFramework
 capability to track down unexpected bugs and flash APUs firmware:
@@ -315,7 +316,7 @@ APU with the newest v4.8.0.3 firmware:**
 
 # Our plans - RTE Control API (beta)
 
-* To open rest API service, type: **`firefox RTE_IP:8000`**
+* To open rest API service, type: **`firefox RTE_IP:8000`** (~3min)
 
 .center[![RTE Ctrl](images/rte-ctrl.png)]
 
@@ -342,8 +343,8 @@ APU with the newest v4.8.0.3 firmware:**
 
 ## .center[Q&A and lottery]
 
-* Cards received at the entrance will serve as numbers to select the winner of the
-lottery. **The prizes are three full RTE sets!**
+* Cards received at the entrance will serve as numbers to select the winner of
+the lottery. **The prizes are three full RTE sets!**
 
 * **Where can I order the RTE for myself?**<br/>
 The online store is starting soon, so please submit any orders to:
